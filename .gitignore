@@ -1,0 +1,29 @@
+# Python
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+test_data/
+*.db
+*.sqlite3
+
+# Node / Frontend
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Environment variables (NEVER commit real keys)
+.env
+.env.production
+.env.local
+
+# Docker / Volume data
+data/
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
