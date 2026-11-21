@@ -9,7 +9,7 @@ A resilient, production-ready full-stack AI chatbot built with **React**, **Fast
 - **Frontend Application (Live UI):** `https://lyftr-ai-frontend.vercel.app` *(Placeholder - deploy URL)*
 - **Backend API (Base URL):** `https://lyftr-ai-backend.onrender.com` *(Placeholder - deploy URL)*
 - **Backend Health Check:** `https://lyftr-ai-backend.onrender.com/health`
-- **Public GitHub Repository:** `https://github.com/<username>/lyftr-ai-gateway`
+- **Public GitHub Repository:** `https://github.com/SHANUTYAGI123/lytrAI`
 - **Demo Video (2–3 minutes):** `https://youtu.be/<video_id>` *(Screen recording with voice explaining live endpoints, cache hit, and failover)*
 
 > **Note on Deployment:** The backend has `ENABLE_FAILURE_SIMULATION=true` set, allowing verification of the failover hook in production. The backend allows CORS origins from the deployed frontend.
