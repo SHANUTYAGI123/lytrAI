@@ -33,7 +33,15 @@ class Settings(BaseSettings):
     def get_allowed_origins(self) -> List[str]:
         if not self.ALLOWED_ORIGINS or self.ALLOWED_ORIGINS.strip() == "*":
             return ["*"]
-        return [o.strip() for o in self.ALLOWED_ORIGINS.split(",") if o.strip()]
+        origins = []
+        for o in self.ALLOWED_ORIGINS.split(","):
+            cleaned = o.strip()
+            if cleaned:
+                origins.append(cleaned)
+                stripped = cleaned.rstrip("/")
+                if stripped != cleaned:
+                    origins.append(stripped)
+        return origins
 
 
 settings = Settings()
